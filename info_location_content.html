@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <meta name="robots" content="noindex,nofollow" />
+    <title>Location information</title>
+
+    <script language="javascript" type="text/javascript">
+        var currentPic = false;
+        function loadPicture(pic)
+        {
+            currentPic = pic;
+            var _img = document.getElementById("img");
+            _img.innerHTML = "<img src=\"images/" + pic + ".jpg\" alt=\"" + pic + "\" style=\"cursor: pointer;\" />";
+            _img.style.zIndex = "2";
+            _img.style.width = "100%";
+            _img.style.height = "436px";
+            var _cls = document.getElementById("cls");
+            _cls.style.zIndex = "3";
+            _cls.style.visibility = "visible";
+            document.getElementById("content").style.zIndex = "1";
+        }
+        function closePicture()
+        {
+            if (currentPic)
+            {
+                currentPic = false;
+                var _img = document.getElementById("img");
+                _img.innerHTML = "";
+                _img.style.zIndex = "1";
+                _img.style.width = "0px";
+                _img.style.height = "0px";
+                var _cls = document.getElementById("cls");
+                _cls.style.zIndex = "2";
+                _cls.style.visibility = "hidden";
+                document.getElementById("content").style.zIndex = "3";
+            }
+        }
+    </script>
+</head>
+<body style="font-family: Sans-Serif;">
+    <div id="content" style="width: 656; background-color: White; padding-bottom: 15px; padding-left: 0px; padding-right: 0px; margin-left: 0px; margin-right: 0px; position: absolute; top: 0px; z-index: 3">
+        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td width="80%" style="width: 80%; text-align: justify;">
+                    <h3 style="padding-bottom: 0px; margin-bottom: 0px;">The tranquil heart of France</h3>
+                    <p style="text-align: justify; padding-top: 5px; margin-top: 0px;">
+                        The Limousin is in the heart of France, in the foothills of the Massif Central, and is a mainly
+                        rural and agricultural area. It is close to the Dordogne with the caves (Grottes de Villars)
+                        and Cro Magnum sites, and the  Perigord Vert which is famous for its gastronomy - foie gras,
+                        truffles, duck and Limousin beef. In the Autumn there are chestnut and wild-mushroom festivals
+                    </p>
+                    <p>
+                        The Haute-Vienne is one of the departments of the Limousin, and is the least industrialised
+                        area of France. It is renowned for it's tranquil undisturbed, open rural countryside, and
+                        is rich in wildlife. It boasts 8 major
+                        <a href="#" onmousedown="loadPicture('Lac de Vassivière');" >lakes</a>, 26 chateaux
+                        (<a href="#" onmousedown="loadPicture('Chateaux Montbrun');" >Montbrun</a>,
+                        <a href="#" onmousedown="loadPicture('Chateaux Jumilhac');" >Jumilhac</a>),
+                        2 theme parks many museums, woodland, and Heritage trails, pretty unspoiled
+                        villages, markets and festivals.
+                    </p>
+                    <h3 style="padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">Accomodation</h3>
+                    <p style="text-align: justify; padding-top: 5px; margin-top: 0px;">
+                        The hotel provides an excellent base to explore the Limousin, Dordogne, and
+                        Auvergne. The accommodation comprises a dozen en-suite chalet-type rooms, with a bar,
+                        restaurant, 13th century chapel, and several "special" fountains, in the middle of a
+                        forest with wonderful views in all directions. Special diets can be catered for.
+                    </p>
+                    <p>
+                        The location is only a few kilometres from the border between the Limousin and Acquitaine.
+                        This boundary marks a very important historical border between an old part of England and
+                        the rest of France. This area is littered with castles which used to guard the border,
+                        like the spectacular Chateau Montbrun. 
+                    </p>
+                    <h3 style="padding-bottom: 0px; margin-bottom: 0px;">On the pilgrimage route to Santiago de Compostela - La Route de Saint Jacques</h3>
+                    <p>
+                        This area of the Limousin is on the main route south for Pilgrims to Santiago de Compostela,
+                        in North-West Spain. The emblem of the Pilgrims was the Scallop - or St Jacques (in French).
+                        You will see brass plaques on the pavements in many local towns showing the routes that the
+                        Pilgrims used to take. 
+                    </p>
+                    <h3 style="padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;">Just south of Limoges</h3>
+                    <p style="text-align: justify; padding-top: 5px; margin-top: 0px;">
+                        Limoges is the capital of the Limousin, and dates back to Roman times. It is famous for its
+                        porcelain, which is made from the local kaolin that is quarried near St. Yrieix-la-Perche,
+                        just south of Limoges, and a few kilometres from our base.
+                    </p>
+                    <h3 style="padding-bottom: 0px; margin-bottom: 0px;">Parc Naturel Regional Perigord-Limousin</h3>
+                    <p style="text-align: justify; padding-top: 5px; margin-top: 0px;">
+                        Our base is also situated in the Perigord-Limousin national park. Visit the park website for
+                        more details:
+                        <a href="http://www.parc-naturel-perigord-limousin.fr" target="_blank">parc-naturel-perigord-limousin.fr</a>
+                    </p>
+                </td>
+                <td width="20%" style="width: 20%; vertical-align: top; text-align: center;">
+                    <span style="position: fixed; top: 20px; right: 1px;">
+                        <img src="images/jum thumb.jpg" alt="Chateaux Jumilhac - click to enlarge" onmousedown="loadPicture('Chateaux Jumilhac');" style="cursor: pointer; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;" />
+                    </span>
+                    <br />
+                    <span style="position: fixed; top: 170px; right: 1px;">
+                        <img src="images/lac thumb.jpg" alt="Lac de Vassivière - click to enlarge" onmousedown="loadPicture('Lac de Vassivière');" style="cursor: pointer; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;" />
+                    </span>
+                    <br />
+                    <span style="position: fixed; top: 320px; right: 1px;">
+                        <img src="images/brn thumb.jpg" alt="Chateaux Montbrun - click to enlarge" onmousedown="loadPicture('Chateaux Montbrun');" style="cursor: pointer; padding-top: 0px; padding-bottom: 0px; margin-top: 0px; margin-bottom: 0px;" />
+                    </span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="cls" style="visibility: hidden; position: fixed; top: 5px; right: 5px; width: 16px; height: 16px; z-index: 2;">
+        <img src="images/close.gif" alt="Close" onmousedown="closePicture();" style="cursor: pointer;" />
+    </div>
+    <div id="img" onmousedown="closePicture();" style="background-color: White; height: 436; text-align: center; position: fixed; top: 0px; width: 100%; z-index: 1;"></div>
+</body>
+</html>
